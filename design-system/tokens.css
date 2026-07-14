@@ -1,0 +1,151 @@
+/* ============================================================
+   Zeka Oyunları — Design Tokens
+   Claymorphism · Playful indigo + energetic orange
+   Themes: light / dark  ·  Age bands: kid (default) / teen
+   ============================================================ */
+
+:root {
+  /* ---- neutrals (indigo-biased) ---- */
+  --color-bg:            #EAEDFB;
+  --color-surface:       #FFFFFF;
+  --color-surface-sunken:#E4E8FA;
+  --color-ink:           #1E1B4B;
+  --color-ink-soft:      #4B4880;
+  --color-ink-mute:      #7B79A6;
+  --color-border:        #C7D2FE;
+  --color-border-strong: #A9B4F5;
+
+  /* ---- brand + semantic ---- */
+  --color-primary:       #4F46E5;
+  --color-primary-press: #4038C4;
+  --color-secondary:     #818CF8;
+  --color-accent:        #E5580C;  /* reward / CTA */
+  --color-accent-press:  #C4470A;
+  --color-free:          #12855F;  /* free tier / success / easy */
+  --color-free-soft:     #D6F1E6;
+  --color-premium:       #B45309;  /* premium / medium */
+  --color-premium-soft:  #FBEAD1;
+  --color-hard:          #C4324B;  /* danger / hard */
+  --color-xp:            #E5580C;
+  --color-star:          #E9A400;
+
+  /* ---- clay radii ---- */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+
+  /* ---- clay shadows (the signature look) ---- */
+  --shadow-clay:
+    8px 8px 20px rgba(79, 70, 229, .16),
+    -6px -6px 16px rgba(255, 255, 255, .90),
+    inset 1px 1px 1px rgba(255, 255, 255, .70);
+  --shadow-clay-press:
+    4px 4px 10px rgba(79, 70, 229, .18),
+    inset 3px 3px 6px rgba(79, 70, 229, .14),
+    inset -2px -2px 5px rgba(255, 255, 255, .80);
+  --shadow-clay-soft:
+    5px 5px 14px rgba(79, 70, 229, .10),
+    -4px -4px 12px rgba(255, 255, 255, .85);
+
+  /* ---- type ---- */
+  --font-display: "Fredoka", "Baloo 2", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --font-body:    "Nunito", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+
+  /* ---- motion ---- */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --dur-press: 160ms;
+  --dur-enter: 300ms;
+}
+
+/* ============================================================
+   DARK THEME
+   Not an inversion — retuned surfaces, lighter accents,
+   softer shadows so clay still reads.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:            #131230;
+    --color-surface:       #201E48;
+    --color-surface-sunken:#191739;
+    --color-ink:           #ECEBFF;
+    --color-ink-soft:      #B9B6E8;
+    --color-ink-mute:      #8380BC;
+    --color-border:        #383573;
+    --color-border-strong: #4B4694;
+    --color-primary:       #8E86FF;
+    --color-primary-press: #A79FFF;
+    --color-secondary:     #A6AEFF;
+    --color-accent:        #FB8140;
+    --color-accent-press:  #FF925A;
+    --color-free:          #43C99B;
+    --color-free-soft:     #10362A;
+    --color-premium:       #F0A63E;
+    --color-premium-soft:  #362713;
+    --color-hard:          #FF7A8F;
+    --color-xp:            #FB8140;
+    --color-star:          #F5C13A;
+    --shadow-clay:
+      10px 10px 24px rgba(0, 0, 0, .45),
+      -6px -6px 16px rgba(120, 110, 220, .10),
+      inset 1px 1px 1px rgba(150, 140, 255, .18);
+    --shadow-clay-press:
+      4px 4px 10px rgba(0, 0, 0, .50),
+      inset 3px 3px 8px rgba(0, 0, 0, .50),
+      inset -2px -2px 5px rgba(140, 130, 240, .15);
+    --shadow-clay-soft:
+      6px 6px 16px rgba(0, 0, 0, .35),
+      -4px -4px 12px rgba(120, 110, 220, .08);
+  }
+}
+
+/* Explicit theme overrides win over the media query in both directions */
+:root[data-theme="light"] {
+  --color-bg:#EAEDFB; --color-surface:#FFFFFF; --color-surface-sunken:#E4E8FA;
+  --color-ink:#1E1B4B; --color-ink-soft:#4B4880; --color-ink-mute:#7B79A6;
+  --color-border:#C7D2FE; --color-border-strong:#A9B4F5;
+  --color-primary:#4F46E5; --color-primary-press:#4038C4; --color-secondary:#818CF8;
+  --color-accent:#E5580C; --color-accent-press:#C4470A;
+  --color-free:#12855F; --color-free-soft:#D6F1E6;
+  --color-premium:#B45309; --color-premium-soft:#FBEAD1; --color-hard:#C4324B;
+  --color-xp:#E5580C; --color-star:#E9A400;
+  --shadow-clay:8px 8px 20px rgba(79,70,229,.16),-6px -6px 16px rgba(255,255,255,.90),inset 1px 1px 1px rgba(255,255,255,.70);
+  --shadow-clay-press:4px 4px 10px rgba(79,70,229,.18),inset 3px 3px 6px rgba(79,70,229,.14),inset -2px -2px 5px rgba(255,255,255,.80);
+  --shadow-clay-soft:5px 5px 14px rgba(79,70,229,.10),-4px -4px 12px rgba(255,255,255,.85);
+}
+:root[data-theme="dark"] {
+  --color-bg:#131230; --color-surface:#201E48; --color-surface-sunken:#191739;
+  --color-ink:#ECEBFF; --color-ink-soft:#B9B6E8; --color-ink-mute:#8380BC;
+  --color-border:#383573; --color-border-strong:#4B4694;
+  --color-primary:#8E86FF; --color-primary-press:#A79FFF; --color-secondary:#A6AEFF;
+  --color-accent:#FB8140; --color-accent-press:#FF925A;
+  --color-free:#43C99B; --color-free-soft:#10362A;
+  --color-premium:#F0A63E; --color-premium-soft:#362713; --color-hard:#FF7A8F;
+  --color-xp:#FB8140; --color-star:#F5C13A;
+  --shadow-clay:10px 10px 24px rgba(0,0,0,.45),-6px -6px 16px rgba(120,110,220,.10),inset 1px 1px 1px rgba(150,140,255,.18);
+  --shadow-clay-press:4px 4px 10px rgba(0,0,0,.50),inset 3px 3px 8px rgba(0,0,0,.50),inset -2px -2px 5px rgba(140,130,240,.15);
+  --shadow-clay-soft:6px 6px 16px rgba(0,0,0,.35),-4px -4px 12px rgba(120,110,220,.08);
+}
+
+/* ============================================================
+   AGE BAND: TEEN
+   Same clay system, matured — tighter radii, deeper colour,
+   calmer feel. Set data-age="teen" on <html> or a subtree.
+   ============================================================ */
+:root[data-age="teen"] {
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --color-primary:  #4338CA;
+  --color-accent:   #D14608;
+  --color-bg:       #E7E9F6;
+}
+:root[data-age="teen"][data-theme="dark"] {
+  --color-primary:  #A79FFF;
+  --color-accent:   #FB8140;
+  --color-bg:       #0F0E26;
+}
+
+/* Reduced motion: respect the OS setting everywhere */
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur-press: 0ms; --dur-enter: 0ms; }
+}
