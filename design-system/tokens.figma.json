@@ -1,0 +1,400 @@
+{
+  "$metadata": {
+    "tokenSetOrder": [
+      "palette",
+      "typography",
+      "kid-light",
+      "kid-dark",
+      "teen-light",
+      "teen-dark",
+      "effects-light",
+      "effects-dark"
+    ]
+  },
+  "$themes": [
+    {
+      "id": "kid-light",
+      "name": "Kid / Light",
+      "group": "Zeka Oyunlari",
+      "selectedTokenSets": {
+        "palette": "source",
+        "typography": "enabled",
+        "kid-light": "enabled",
+        "effects-light": "enabled"
+      }
+    },
+    {
+      "id": "kid-dark",
+      "name": "Kid / Dark",
+      "group": "Zeka Oyunlari",
+      "selectedTokenSets": {
+        "palette": "source",
+        "typography": "enabled",
+        "kid-dark": "enabled",
+        "effects-dark": "enabled"
+      }
+    },
+    {
+      "id": "teen-light",
+      "name": "Teen / Light",
+      "group": "Zeka Oyunlari",
+      "selectedTokenSets": {
+        "palette": "source",
+        "typography": "enabled",
+        "teen-light": "enabled",
+        "effects-light": "enabled"
+      }
+    },
+    {
+      "id": "teen-dark",
+      "name": "Teen / Dark",
+      "group": "Zeka Oyunlari",
+      "selectedTokenSets": {
+        "palette": "source",
+        "typography": "enabled",
+        "teen-dark": "enabled",
+        "effects-dark": "enabled"
+      }
+    }
+  ],
+
+  "palette": {
+    "indigo": {
+      "500": { "value": "#4F46E5", "type": "color", "description": "Brand primary (light)" },
+      "600": { "value": "#4338CA", "type": "color", "description": "Teen primary (light)" },
+      "700": { "value": "#4038C4", "type": "color", "description": "Primary pressed (light)" },
+      "300": { "value": "#818CF8", "type": "color", "description": "Secondary (light)" },
+      "200": { "value": "#A6AEFF", "type": "color", "description": "Secondary (dark)" },
+      "250": { "value": "#8E86FF", "type": "color", "description": "Primary (dark)" },
+      "150": { "value": "#A79FFF", "type": "color", "description": "Primary pressed (dark) / teen primary (dark)" }
+    },
+    "orange": {
+      "500": { "value": "#E5580C", "type": "color", "description": "Accent — reward / CTA (light)" },
+      "600": { "value": "#C4470A", "type": "color", "description": "Accent pressed (light)" },
+      "550": { "value": "#D14608", "type": "color", "description": "Teen accent (light)" },
+      "300": { "value": "#FB8140", "type": "color", "description": "Accent (dark)" },
+      "200": { "value": "#FF925A", "type": "color", "description": "Accent pressed (dark)" },
+      "400": { "value": "#F5A524", "type": "color", "description": "XP gradient end" }
+    },
+    "green": {
+      "600": { "value": "#12855F", "type": "color", "description": "Free / success / easy (light)" },
+      "100": { "value": "#D6F1E6", "type": "color", "description": "Free soft (light)" },
+      "300": { "value": "#43C99B", "type": "color", "description": "Free / success (dark)" },
+      "900": { "value": "#10362A", "type": "color", "description": "Free soft (dark)" }
+    },
+    "gold": {
+      "600": { "value": "#B45309", "type": "color", "description": "Premium / medium (light)" },
+      "100": { "value": "#FBEAD1", "type": "color", "description": "Premium soft (light)" },
+      "300": { "value": "#F0A63E", "type": "color", "description": "Premium (dark)" },
+      "900": { "value": "#362713", "type": "color", "description": "Premium soft (dark)" },
+      "star-light": { "value": "#E9A400", "type": "color", "description": "Star (light)" },
+      "star-dark": { "value": "#F5C13A", "type": "color", "description": "Star (dark)" }
+    },
+    "rose": {
+      "600": { "value": "#C4324B", "type": "color", "description": "Danger / hard (light)" },
+      "300": { "value": "#FF7A8F", "type": "color", "description": "Danger / hard (dark)" }
+    },
+    "neutral-light": {
+      "bg": { "value": "#EAEDFB", "type": "color" },
+      "bg-teen": { "value": "#E7E9F6", "type": "color" },
+      "surface": { "value": "#FFFFFF", "type": "color" },
+      "sunken": { "value": "#E4E8FA", "type": "color" },
+      "ink": { "value": "#1E1B4B", "type": "color" },
+      "ink-soft": { "value": "#4B4880", "type": "color" },
+      "ink-mute": { "value": "#7B79A6", "type": "color" },
+      "border": { "value": "#C7D2FE", "type": "color" },
+      "border-strong": { "value": "#A9B4F5", "type": "color" }
+    },
+    "neutral-dark": {
+      "bg": { "value": "#131230", "type": "color" },
+      "bg-teen": { "value": "#0F0E26", "type": "color" },
+      "surface": { "value": "#201E48", "type": "color" },
+      "sunken": { "value": "#191739", "type": "color" },
+      "ink": { "value": "#ECEBFF", "type": "color" },
+      "ink-soft": { "value": "#B9B6E8", "type": "color" },
+      "ink-mute": { "value": "#8380BC", "type": "color" },
+      "border": { "value": "#383573", "type": "color" },
+      "border-strong": { "value": "#4B4694", "type": "color" }
+    },
+    "white": { "value": "#FFFFFF", "type": "color" }
+  },
+
+  "typography": {
+    "font": {
+      "display": { "value": "Fredoka", "type": "fontFamilies", "description": "Headings — rounded, chunky. Turkish glyphs supported." },
+      "body": { "value": "Nunito", "type": "fontFamilies", "description": "Body — legible for young readers. Turkish glyphs supported." }
+    },
+    "fontWeight": {
+      "regular": { "value": "Regular", "type": "fontWeights" },
+      "bold": { "value": "Bold", "type": "fontWeights" },
+      "extrabold": { "value": "ExtraBold", "type": "fontWeights" }
+    },
+    "fontSize": {
+      "hero": { "value": "32", "type": "fontSizes", "description": "Mobile hero; 44 on desktop" },
+      "hero-desktop": { "value": "44", "type": "fontSizes" },
+      "section": { "value": "24", "type": "fontSizes", "description": "Mobile section; 32 on desktop" },
+      "section-desktop": { "value": "32", "type": "fontSizes" },
+      "card": { "value": "20", "type": "fontSizes" },
+      "body": { "value": "16", "type": "fontSizes", "description": "Never below 16 on mobile" },
+      "label": { "value": "13", "type": "fontSizes" }
+    },
+    "lineHeight": {
+      "tight": { "value": "105%", "type": "lineHeights" },
+      "heading": { "value": "120%", "type": "lineHeights" },
+      "body": { "value": "150%", "type": "lineHeights", "description": "Minimum 1.5 for body" }
+    },
+    "letterSpacing": {
+      "tight": { "value": "-1%", "type": "letterSpacing" },
+      "normal": { "value": "0%", "type": "letterSpacing" },
+      "wide": { "value": "6%", "type": "letterSpacing", "description": "Uppercase labels" }
+    },
+    "text": {
+      "hero": {
+        "value": {
+          "fontFamily": "{font.display}",
+          "fontWeight": "{fontWeight.bold}",
+          "fontSize": "{fontSize.hero}",
+          "lineHeight": "{lineHeight.tight}",
+          "letterSpacing": "{letterSpacing.tight}"
+        },
+        "type": "typography"
+      },
+      "section": {
+        "value": {
+          "fontFamily": "{font.display}",
+          "fontWeight": "{fontWeight.bold}",
+          "fontSize": "{fontSize.section}",
+          "lineHeight": "{lineHeight.heading}",
+          "letterSpacing": "{letterSpacing.tight}"
+        },
+        "type": "typography"
+      },
+      "card-title": {
+        "value": {
+          "fontFamily": "{font.display}",
+          "fontWeight": "{fontWeight.extrabold}",
+          "fontSize": "{fontSize.card}",
+          "lineHeight": "{lineHeight.heading}",
+          "letterSpacing": "{letterSpacing.normal}"
+        },
+        "type": "typography"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "{font.body}",
+          "fontWeight": "{fontWeight.regular}",
+          "fontSize": "{fontSize.body}",
+          "lineHeight": "{lineHeight.body}",
+          "letterSpacing": "{letterSpacing.normal}"
+        },
+        "type": "typography"
+      },
+      "label": {
+        "value": {
+          "fontFamily": "{font.body}",
+          "fontWeight": "{fontWeight.extrabold}",
+          "fontSize": "{fontSize.label}",
+          "lineHeight": "{lineHeight.body}",
+          "letterSpacing": "{letterSpacing.wide}"
+        },
+        "type": "typography"
+      }
+    },
+    "spacing": {
+      "1": { "value": "4", "type": "spacing" },
+      "2": { "value": "8", "type": "spacing" },
+      "3": { "value": "12", "type": "spacing" },
+      "4": { "value": "16", "type": "spacing" },
+      "6": { "value": "24", "type": "spacing" },
+      "8": { "value": "32", "type": "spacing" },
+      "12": { "value": "48", "type": "spacing" }
+    },
+    "size": {
+      "touch-min": { "value": "44", "type": "sizing", "description": "Minimum touch target — non-negotiable" }
+    }
+  },
+
+  "kid-light": {
+    "color": {
+      "bg": { "value": "{palette.neutral-light.bg}", "type": "color" },
+      "surface": { "value": "{palette.neutral-light.surface}", "type": "color" },
+      "surface-sunken": { "value": "{palette.neutral-light.sunken}", "type": "color" },
+      "ink": { "value": "{palette.neutral-light.ink}", "type": "color" },
+      "ink-soft": { "value": "{palette.neutral-light.ink-soft}", "type": "color" },
+      "ink-mute": { "value": "{palette.neutral-light.ink-mute}", "type": "color" },
+      "border": { "value": "{palette.neutral-light.border}", "type": "color" },
+      "border-strong": { "value": "{palette.neutral-light.border-strong}", "type": "color" },
+      "primary": { "value": "{palette.indigo.500}", "type": "color" },
+      "primary-press": { "value": "{palette.indigo.700}", "type": "color" },
+      "secondary": { "value": "{palette.indigo.300}", "type": "color" },
+      "accent": { "value": "{palette.orange.500}", "type": "color" },
+      "accent-press": { "value": "{palette.orange.600}", "type": "color" },
+      "free": { "value": "{palette.green.600}", "type": "color" },
+      "free-soft": { "value": "{palette.green.100}", "type": "color" },
+      "premium": { "value": "{palette.gold.600}", "type": "color" },
+      "premium-soft": { "value": "{palette.gold.100}", "type": "color" },
+      "hard": { "value": "{palette.rose.600}", "type": "color" },
+      "xp": { "value": "{palette.orange.500}", "type": "color" },
+      "star": { "value": "{palette.gold.star-light}", "type": "color" },
+      "on-accent": { "value": "{palette.white}", "type": "color" }
+    },
+    "radius": {
+      "sm": { "value": "12", "type": "borderRadius" },
+      "md": { "value": "18", "type": "borderRadius" },
+      "lg": { "value": "26", "type": "borderRadius" }
+    }
+  },
+
+  "kid-dark": {
+    "color": {
+      "bg": { "value": "{palette.neutral-dark.bg}", "type": "color" },
+      "surface": { "value": "{palette.neutral-dark.surface}", "type": "color" },
+      "surface-sunken": { "value": "{palette.neutral-dark.sunken}", "type": "color" },
+      "ink": { "value": "{palette.neutral-dark.ink}", "type": "color" },
+      "ink-soft": { "value": "{palette.neutral-dark.ink-soft}", "type": "color" },
+      "ink-mute": { "value": "{palette.neutral-dark.ink-mute}", "type": "color" },
+      "border": { "value": "{palette.neutral-dark.border}", "type": "color" },
+      "border-strong": { "value": "{palette.neutral-dark.border-strong}", "type": "color" },
+      "primary": { "value": "{palette.indigo.250}", "type": "color" },
+      "primary-press": { "value": "{palette.indigo.150}", "type": "color" },
+      "secondary": { "value": "{palette.indigo.200}", "type": "color" },
+      "accent": { "value": "{palette.orange.300}", "type": "color" },
+      "accent-press": { "value": "{palette.orange.200}", "type": "color" },
+      "free": { "value": "{palette.green.300}", "type": "color" },
+      "free-soft": { "value": "{palette.green.900}", "type": "color" },
+      "premium": { "value": "{palette.gold.300}", "type": "color" },
+      "premium-soft": { "value": "{palette.gold.900}", "type": "color" },
+      "hard": { "value": "{palette.rose.300}", "type": "color" },
+      "xp": { "value": "{palette.orange.300}", "type": "color" },
+      "star": { "value": "{palette.gold.star-dark}", "type": "color" },
+      "on-accent": { "value": "{palette.white}", "type": "color" }
+    },
+    "radius": {
+      "sm": { "value": "12", "type": "borderRadius" },
+      "md": { "value": "18", "type": "borderRadius" },
+      "lg": { "value": "26", "type": "borderRadius" }
+    }
+  },
+
+  "teen-light": {
+    "color": {
+      "bg": { "value": "{palette.neutral-light.bg-teen}", "type": "color" },
+      "surface": { "value": "{palette.neutral-light.surface}", "type": "color" },
+      "surface-sunken": { "value": "{palette.neutral-light.sunken}", "type": "color" },
+      "ink": { "value": "{palette.neutral-light.ink}", "type": "color" },
+      "ink-soft": { "value": "{palette.neutral-light.ink-soft}", "type": "color" },
+      "ink-mute": { "value": "{palette.neutral-light.ink-mute}", "type": "color" },
+      "border": { "value": "{palette.neutral-light.border}", "type": "color" },
+      "border-strong": { "value": "{palette.neutral-light.border-strong}", "type": "color" },
+      "primary": { "value": "{palette.indigo.600}", "type": "color", "description": "Deeper than kid band" },
+      "primary-press": { "value": "{palette.indigo.700}", "type": "color" },
+      "secondary": { "value": "{palette.indigo.300}", "type": "color" },
+      "accent": { "value": "{palette.orange.550}", "type": "color", "description": "Deeper than kid band" },
+      "accent-press": { "value": "{palette.orange.600}", "type": "color" },
+      "free": { "value": "{palette.green.600}", "type": "color" },
+      "free-soft": { "value": "{palette.green.100}", "type": "color" },
+      "premium": { "value": "{palette.gold.600}", "type": "color" },
+      "premium-soft": { "value": "{palette.gold.100}", "type": "color" },
+      "hard": { "value": "{palette.rose.600}", "type": "color" },
+      "xp": { "value": "{palette.orange.550}", "type": "color" },
+      "star": { "value": "{palette.gold.star-light}", "type": "color" },
+      "on-accent": { "value": "{palette.white}", "type": "color" }
+    },
+    "radius": {
+      "sm": { "value": "8", "type": "borderRadius", "description": "Tighter — matured band" },
+      "md": { "value": "12", "type": "borderRadius" },
+      "lg": { "value": "18", "type": "borderRadius" }
+    }
+  },
+
+  "teen-dark": {
+    "color": {
+      "bg": { "value": "{palette.neutral-dark.bg-teen}", "type": "color" },
+      "surface": { "value": "{palette.neutral-dark.surface}", "type": "color" },
+      "surface-sunken": { "value": "{palette.neutral-dark.sunken}", "type": "color" },
+      "ink": { "value": "{palette.neutral-dark.ink}", "type": "color" },
+      "ink-soft": { "value": "{palette.neutral-dark.ink-soft}", "type": "color" },
+      "ink-mute": { "value": "{palette.neutral-dark.ink-mute}", "type": "color" },
+      "border": { "value": "{palette.neutral-dark.border}", "type": "color" },
+      "border-strong": { "value": "{palette.neutral-dark.border-strong}", "type": "color" },
+      "primary": { "value": "{palette.indigo.150}", "type": "color" },
+      "primary-press": { "value": "{palette.indigo.150}", "type": "color" },
+      "secondary": { "value": "{palette.indigo.200}", "type": "color" },
+      "accent": { "value": "{palette.orange.300}", "type": "color" },
+      "accent-press": { "value": "{palette.orange.200}", "type": "color" },
+      "free": { "value": "{palette.green.300}", "type": "color" },
+      "free-soft": { "value": "{palette.green.900}", "type": "color" },
+      "premium": { "value": "{palette.gold.300}", "type": "color" },
+      "premium-soft": { "value": "{palette.gold.900}", "type": "color" },
+      "hard": { "value": "{palette.rose.300}", "type": "color" },
+      "xp": { "value": "{palette.orange.300}", "type": "color" },
+      "star": { "value": "{palette.gold.star-dark}", "type": "color" },
+      "on-accent": { "value": "{palette.white}", "type": "color" }
+    },
+    "radius": {
+      "sm": { "value": "8", "type": "borderRadius" },
+      "md": { "value": "12", "type": "borderRadius" },
+      "lg": { "value": "18", "type": "borderRadius" }
+    }
+  },
+
+  "effects-light": {
+    "shadow": {
+      "clay": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(79,70,229,0.16)", "x": "8", "y": "8", "blur": "20", "spread": "0" },
+          { "type": "dropShadow", "color": "rgba(255,255,255,0.90)", "x": "-6", "y": "-6", "blur": "16", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(255,255,255,0.70)", "x": "1", "y": "1", "blur": "1", "spread": "0" }
+        ],
+        "type": "boxShadow",
+        "description": "Signature clay surface — outer drop + light highlight + inner sheen"
+      },
+      "clay-press": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(79,70,229,0.18)", "x": "4", "y": "4", "blur": "10", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(79,70,229,0.14)", "x": "3", "y": "3", "blur": "6", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(255,255,255,0.80)", "x": "-2", "y": "-2", "blur": "5", "spread": "0" }
+        ],
+        "type": "boxShadow",
+        "description": "Pressed / sunken state"
+      },
+      "clay-soft": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(79,70,229,0.10)", "x": "5", "y": "5", "blur": "14", "spread": "0" },
+          { "type": "dropShadow", "color": "rgba(255,255,255,0.85)", "x": "-4", "y": "-4", "blur": "12", "spread": "0" }
+        ],
+        "type": "boxShadow",
+        "description": "Subordinate surfaces"
+      }
+    }
+  },
+
+  "effects-dark": {
+    "shadow": {
+      "clay": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(0,0,0,0.45)", "x": "10", "y": "10", "blur": "24", "spread": "0" },
+          { "type": "dropShadow", "color": "rgba(120,110,220,0.10)", "x": "-6", "y": "-6", "blur": "16", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(150,140,255,0.18)", "x": "1", "y": "1", "blur": "1", "spread": "0" }
+        ],
+        "type": "boxShadow",
+        "description": "Retuned for dark — not an inversion"
+      },
+      "clay-press": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(0,0,0,0.50)", "x": "4", "y": "4", "blur": "10", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(0,0,0,0.50)", "x": "3", "y": "3", "blur": "8", "spread": "0" },
+          { "type": "innerShadow", "color": "rgba(140,130,240,0.15)", "x": "-2", "y": "-2", "blur": "5", "spread": "0" }
+        ],
+        "type": "boxShadow"
+      },
+      "clay-soft": {
+        "value": [
+          { "type": "dropShadow", "color": "rgba(0,0,0,0.35)", "x": "6", "y": "6", "blur": "16", "spread": "0" },
+          { "type": "dropShadow", "color": "rgba(120,110,220,0.08)", "x": "-4", "y": "-4", "blur": "12", "spread": "0" }
+        ],
+        "type": "boxShadow"
+      }
+    }
+  }
+}
